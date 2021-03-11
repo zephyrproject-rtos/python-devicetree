@@ -1,0 +1,4 @@
+dist/
+src/devicetree.egg-info/
+build/
+devicetree.egg-info/
