@@ -11,7 +11,7 @@ copyright = u'2021 Zephyr Project members and individual contributors'
 author = 'Zephyr Project'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0'
+release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
