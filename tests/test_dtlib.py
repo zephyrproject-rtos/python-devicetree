@@ -8,7 +8,7 @@ import tempfile
 
 import pytest
 
-import dtlib
+from devicetree import dtlib
 
 # Test suite for dtlib.py.
 #

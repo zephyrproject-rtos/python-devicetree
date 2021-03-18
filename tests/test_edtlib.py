@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pytest
 
-import edtlib
+from devicetree import edtlib
 
 # Test suite for edtlib.py.
 #
@@ -40,7 +40,7 @@ def test_warnings(caplog):
         f"compatible 'enums' in binding '{enums_hpath}' has non-tokenizable enum for property 'string-enum': 'foo bar', 'foo_bar'",
         f"compatible 'enums' in binding '{enums_hpath}' has enum for property 'tokenizable-lower-enum' that is only tokenizable in lowercase: 'bar', 'BAR'",
     ]
-    assert caplog.record_tuples == [('edtlib', WARNING, warning_message)
+    assert caplog.record_tuples == [('devicetree.edtlib', WARNING, warning_message)
                                     for warning_message in expected_warnings]
 
 def test_interrupts():
