@@ -35,6 +35,8 @@ setuptools.setup(
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
     ],
-    install_requires=[],
+    install_requires=[
+        'PyYAML>=5.1',
+    ],
     python_requires='>=3.6',
 )
