@@ -1635,7 +1635,9 @@ class Property:
     @property
     def description(self):
         "See the class docstring"
-        return self.spec.description.strip()
+        if self.spec.description is not None:
+            return self.spec.description.strip()
+        return None
 
     @property
     def type(self):
